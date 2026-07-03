@@ -1,5 +1,5 @@
 # TickerHookSerial
-Hook dll for capturing ticker text from IIDX. Sends data via serial.
+Hook dll for capturing ticker text from IIDX. Sends data via serial to a COM port.
 
 This is a fork of [TickerHook](https://github.com/Radioo/TickerHook).
 
