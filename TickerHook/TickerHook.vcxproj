@@ -73,26 +73,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <ExternalIncludePath>C:\Soft\boost_1_79_0;C:\Soft\websocketpp;C:\Soft\minhook\include;$(ExternalIncludePath)</ExternalIncludePath>
-    <LibraryPath>C:\Soft\boost_1_79_0\stage\lib;C:\Soft\minhook\build\VC16\lib\$(Configuration);$(LibraryPath)</LibraryPath>
+    <ExternalIncludePath>C:\Soft\minhook\include;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>C:\Soft\minhook\build\VC17\lib\$(Configuration);C:\Soft\minhook\build\VC16\lib\$(Configuration);$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)$(Configuration)\$(Platform)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <ExternalIncludePath>C:\Soft\boost_1_79_0;C:\Soft\websocketpp;C:\Soft\minhook\include;$(ExternalIncludePath)</ExternalIncludePath>
-    <LibraryPath>C:\Soft\boost_1_79_0\stage\lib;C:\Soft\minhook\build\VC16\lib\$(Configuration);$(LibraryPath)</LibraryPath>
+    <ExternalIncludePath>C:\Soft\minhook\include;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>C:\Soft\minhook\build\VC17\lib\$(Configuration);C:\Soft\minhook\build\VC16\lib\$(Configuration);$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)$(Configuration)\$(Platform)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <ExternalIncludePath>C:\Soft\boost_1_79_0;C:\Soft\websocketpp;C:\Soft\minhook\include;$(ExternalIncludePath)</ExternalIncludePath>
-    <LibraryPath>C:\Soft\boost_1_79_0\stage\lib;C:\Soft\minhook\build\VC16\lib\$(Configuration);$(LibraryPath)</LibraryPath>
+    <ExternalIncludePath>C:\Soft\minhook\include;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>C:\Soft\minhook\build\VC17\lib\$(Configuration);C:\Soft\minhook\build\VC16\lib\$(Configuration);$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)$(Configuration)\$(Platform)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <ExternalIncludePath>C:\Soft\boost_1_79_0;C:\Soft\websocketpp;C:\Soft\minhook\include;$(ExternalIncludePath)</ExternalIncludePath>
-    <LibraryPath>C:\Soft\boost_1_79_0\stage\lib;C:\Soft\minhook\build\VC16\lib\$(Configuration);$(LibraryPath)</LibraryPath>
+    <ExternalIncludePath>C:\Soft\minhook\include;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>C:\Soft\minhook\build\VC17\lib\$(Configuration);C:\Soft\minhook\build\VC16\lib\$(Configuration);$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)$(Configuration)\$(Platform)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -175,7 +175,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="WSServer.cpp" />
+    <ClCompile Include="SerialServer.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

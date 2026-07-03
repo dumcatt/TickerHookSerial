@@ -1,6 +1,6 @@
 // dllmain.cpp : Defines the entry point for the DLL application.
 #include "pch.h"
-#include "WSServer.cpp"
+#include "SerialServer.cpp"
 
 #if _WIN64
 #pragma comment(lib, "libMinHook.x64.lib")
@@ -8,7 +8,7 @@
 #pragma comment(lib, "libMinHook.x86.lib")
 #endif
 
-broadcast_server s;
+serial_server s;
 
 void TickerOut(uintptr_t tickerText)
 {
@@ -22,7 +22,7 @@ void TickerOut(uintptr_t tickerText)
 DWORD WINAPI StartServer(LPVOID hModule)
 {
     std::cout << "Server started" << std::endl;
-    s.run(10573);
+    s.run();
     return EXIT_SUCCESS;
 }
 
